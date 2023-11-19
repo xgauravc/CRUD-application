@@ -38,7 +38,7 @@
                             <td>{{record.pincode }}</td>
                             <td>{{record.country }}</td>
                             <td>{{record.created_date }}</td>
-                            <td><span><i class="fa fa-eye"></i></span></td>
+                            <td><a href="{% url 'record' record.id %}">&nbsp;<i class="fa fa-user-eye" aria-hidden="true"></i></a></td>
 
                     </tr>
                 {% endfor %}
