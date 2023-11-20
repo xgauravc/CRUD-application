@@ -4,7 +4,7 @@
     <h5>Welcome, {{user}}</h5>
     <hr/>
 
-    <a href="{% url 'create-record' %}" class="btn btn-outline-primary btn-sm">Create a new record</a>
+    <a href="{% url 'create-record' %}" class="btn btn-outline-primary btn-sm">Create a new record &nbsp; <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
 
     <hr/>
 
@@ -38,7 +38,7 @@
                             <td>{{record.pincode }}</td>
                             <td>{{record.country }}</td>
                             <td>{{record.created_date }}</td>
-                            <td><a href="{% url 'record' record.id %}">&nbsp;<i class="fa fa-user-eye" aria-hidden="true"></i></a></td>
+                            <td><a class="btn btn-secondary btn-sm" href="{% url 'record' record.id %}">&nbsp;<i class="fa fa-eye" aria-hidden="true"></i></a></td>
 
                     </tr>
                 {% endfor %}
